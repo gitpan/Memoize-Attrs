@@ -1,0 +1,49 @@
+Memoize-Attrs version 0.00_01
+=============================
+
+NAME
+    Memoize::Attrs - Add memoization with subroutine attributes
+
+SYNOPSIS
+        use Memoize::Attrs;
+
+        sub slow_function :MEMOIZE {
+            ...
+        }
+        # slow_function is memoized and faster 
+
+DESCRIPTION
+    Memoization is a wonderful thing when appropriate. And memoization is a
+    nice optimization trick that may be applied after some thought and
+    experimentation. With the "Memoize" module, that means to invoke
+    "memoize" after declaring the subroutine in question.
+
+    But that said, memoization looks like a trait and should be added
+    without much fuss. That trivial module makes is possible by annotating
+    subroutine definitions with an attribute "MEMOIZE".
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  Memoize
+  Attribute::Handlers
+
+which are core Perl modules. 
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2007 by Ferreira
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+

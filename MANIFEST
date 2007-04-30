@@ -1,0 +1,14 @@
+Makefile.PL
+Changes
+README
+MANIFEST			This list of files
+
+lib/Memoize/Attrs.pm
+
+t/01use.t
+t/02basic.t
+t/03basic-with-install.t
+t/98pod-coverage.t
+t/99pod.t
+
+META.yml                                 Module meta-data (added by MakeMaker)
