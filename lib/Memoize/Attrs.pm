@@ -4,7 +4,7 @@ package Memoize::Attrs;
 use strict;
 use warnings;
 
-our $VERSION = '0.00_01';
+our $VERSION = '0.00_02';
 
 use Attribute::Handlers;
 use Memoize;
@@ -123,6 +123,21 @@ Just like the options in C<Memoize> module.
 
     Memoize
     Attribute::Handlers
+
+After the release of this module to CPAN, I found
+
+    Attribute::Memoize
+
+There are some subtle differences between the two
+modules (besides using Memoize x MEMOIZE). Namely,
+
+    * this module resolves non-qualified subnames
+      into the caller's package, while 
+      Attribute::Memoize requires the use of fully
+      qualified names
+    * this uses attribute handlers applied at CHECK
+      time while the former uses BEGIN-enabled
+      handlers. 
 
 =head1 BUGS
 
