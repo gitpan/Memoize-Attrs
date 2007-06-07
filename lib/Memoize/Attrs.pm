@@ -4,7 +4,7 @@ package Memoize::Attrs;
 use strict;
 use warnings;
 
-our $VERSION = '0.00_02';
+our $VERSION = '0.00_03';
 
 use Attribute::Handlers;
 use Memoize;

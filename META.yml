@@ -1,15 +1,19 @@
 --- #YAML:1.0
 name:                Memoize-Attrs
-version:             0.00_02
+version:             0.00_03
 abstract:            Add memoization with subroutine attributes
-license:             unknown
-generated_by:        ExtUtils::MakeMaker version 6.30_04
-author:              Adriano R. Ferreira <ferreira@cpan.org>
+license:             perl
+generated_by:        ExtUtils::MakeMaker version 6.32_01
 distribution_type:   module
 requires:     
     Attribute::Handlers:           0
     Memoize:                       0
     Test::More:                    0
 meta-spec:
-    url: http://module-build.sourceforge.net/META-spec-new.html
-    version: 1.1
+    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
+    version: 1.2
+author:
+    - Adriano R. Ferreira <ferreira@cpan.org>
+recommends:
+    Test::Pod:                     1.18
+    Test::Pod::Coverage:           1.04

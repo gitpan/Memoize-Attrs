@@ -6,7 +6,7 @@ BEGIN { use_ok('Memoize::Attrs') };
 
 my $COUNT = 0;
 
-sub no_args :MEMOIZE( INSTALL => memo_no_args ) {
+sub no_args :MEMOIZE( INSTALL => 'memo_no_args' ) {
     my $arg = shift;
     $COUNT++;
     11;

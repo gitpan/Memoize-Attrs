@@ -2,6 +2,10 @@ Revision history for Perl extension Memoize::Attrs.
 
     $Id: Changes 1228 2007-03-21 10:28:27Z me $
 
+0.00_03 Wed Jun  6 2007
+        - get rid of bareword at t/03*.t script:
+          blead croaks there
+
 0.00_02 Tue May  1 2007
         - now I know Attribute::Memoize already
           existed
